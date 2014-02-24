@@ -20,6 +20,8 @@
 		D9E9B16E18BB8E2C00413C84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E9B15018BB8E2C00413C84 /* UIKit.framework */; };
 		D9E9B17618BB8E2C00413C84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9E9B17418BB8E2C00413C84 /* InfoPlist.strings */; };
 		D9E9B17818BB8E2C00413C84 /* ProtectCatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9B17718BB8E2C00413C84 /* ProtectCatTests.m */; };
+		D9E9B18318BB9C2A00413C84 /* ProtectoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9B18218BB9C2A00413C84 /* ProtectoresViewController.m */; };
+		D9E9B18618BB9D1500413C84 /* ProtectoresCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E9B18518BB9D1500413C84 /* ProtectoresCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		D9E9B17318BB8E2C00413C84 /* ProtectCatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProtectCatTests-Info.plist"; sourceTree = "<group>"; };
 		D9E9B17518BB8E2C00413C84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D9E9B17718BB8E2C00413C84 /* ProtectCatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtectCatTests.m; sourceTree = "<group>"; };
+		D9E9B18118BB9C2A00413C84 /* ProtectoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectoresViewController.h; sourceTree = "<group>"; };
+		D9E9B18218BB9C2A00413C84 /* ProtectoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectoresViewController.m; sourceTree = "<group>"; };
+		D9E9B18418BB9D1500413C84 /* ProtectoresCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtectoresCell.h; sourceTree = "<group>"; };
+		D9E9B18518BB9D1500413C84 /* ProtectoresCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtectoresCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,10 @@
 				D9E9B15E18BB8E2C00413C84 /* Main.storyboard */,
 				D9E9B16418BB8E2C00413C84 /* Images.xcassets */,
 				D9E9B15318BB8E2C00413C84 /* Supporting Files */,
+				D9E9B18118BB9C2A00413C84 /* ProtectoresViewController.h */,
+				D9E9B18218BB9C2A00413C84 /* ProtectoresViewController.m */,
+				D9E9B18418BB9D1500413C84 /* ProtectoresCell.h */,
+				D9E9B18518BB9D1500413C84 /* ProtectoresCell.m */,
 			);
 			path = ProtectCat;
 			sourceTree = "<group>";
@@ -246,6 +256,8 @@
 			files = (
 				D9E9B15D18BB8E2C00413C84 /* AppDelegate.m in Sources */,
 				D9E9B15918BB8E2C00413C84 /* main.m in Sources */,
+				D9E9B18618BB9D1500413C84 /* ProtectoresCell.m in Sources */,
+				D9E9B18318BB9C2A00413C84 /* ProtectoresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
