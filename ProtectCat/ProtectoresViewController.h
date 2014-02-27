@@ -10,4 +10,6 @@
 
 @interface ProtectoresViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *cellLabel;
+
 @end

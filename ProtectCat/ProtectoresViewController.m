@@ -28,11 +28,12 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.cellLabel = [[NSArray alloc]
+                     initWithObjects:@"SPAM",
+                     @"XX",
+                     @"123",
+                     @"iqfjioqef",
+                     @"kwkoeko", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,18 +53,23 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return [self.cellLabel count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"protectoresCell";
-    ProtectoresCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ProtectoresCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    NSLog(@"%@",cell);
+    if (cell == nil) {
+        cell = [[ProtectoresCell alloc]
+                initWithStyle:UITableViewCellStyleDefault
+                reuseIdentifier:CellIdentifier];
+    }
     
     // Configure the cell...
-    cell.cellLabel.text=@"hola";
+    cell.cellLabel.text = [self.cellLabel
+                           objectAtIndex: [indexPath row]];
     
     return cell;
 }
